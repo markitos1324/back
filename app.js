@@ -67,6 +67,7 @@ app.put('/Cliente/:id', function (req, res) {
     Client.findOneAndUpdate({ id: req.params.id},{$set:{title: req.body.title, completed: req.body.completed}},{new:true})   .then((docs)=>{
         if(docs) {
            resolve({success:true,data:docs});
+           console.log("Successful update");
         } else {
            reject({success:false,data:"no such user exist"});
         }
@@ -103,6 +104,10 @@ async function mongoDelete(id){
     });
 }
 
+
+/**
+ * Ejecucion del servidor en el puerto 3000
+ */
 app.listen(3000, function () {
   console.log('Server on port 3000!');
 });
