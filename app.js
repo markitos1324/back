@@ -82,10 +82,6 @@ app.delete('/Cliente/:id', function (req, res) {
 
 });
 
-async function mongoPut(id, title, completed){
-    
-}
-
 /**
  * Crea un nuevo dato en el modelo Client en la base de datos.
  * @param {number} userId 
