@@ -10,3 +10,5 @@ cors  https://expressjs.com/en/resources/middleware/cors.html
 express  https://expressjs.com/es/starter/installing.html
 
 Mongoose  https://www.robinwieruch.de/mongodb-express-setup-tutorial
+
+JsonPlace Holder  https://www.npmjs.com/package/jsonplaceholder
